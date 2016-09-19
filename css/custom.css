@@ -1,0 +1,152 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../sass/reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 27, ../sass/reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 31, ../sass/reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 34, ../sass/reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 37, ../sass/reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 40, ../sass/reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 45, ../sass/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media (max-width: 2000px) {
+  /* line 7, ../sass/custom.scss */
+  body {
+    background-color: #ededed;
+    color: #000;
+  }
+  /* line 12, ../sass/custom.scss */
+  body .navigation {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* line 19, ../sass/custom.scss */
+  body .logo {
+    height: 40px;
+  }
+  /* line 24, ../sass/custom.scss */
+  body .container {
+    margin: auto;
+    width: 960px;
+  }
+  /* line 28, ../sass/custom.scss */
+  body .container .accordion-toggle {
+    cursor: pointer;
+  }
+  /* line 32, ../sass/custom.scss */
+  body .container .accordion-content {
+    display: none;
+  }
+  /* line 36, ../sass/custom.scss */
+  body .container .accordion-content.default {
+    display: block;
+  }
+  /* line 40, ../sass/custom.scss */
+  body .container ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+  }
+  /* line 49, ../sass/custom.scss */
+  body .container li {
+    display: flex;
+    align-items: center;
+  }
+  /* line 54, ../sass/custom.scss */
+  body .container li a, body .container .dropbtn {
+    display: flex;
+    color: #000;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  /* line 61, ../sass/custom.scss */
+  body .container li a:hover, body .container .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  /* line 65, ../sass/custom.scss */
+  body .container li.dropdown {
+    display: inline-block;
+  }
+  /* line 69, ../sass/custom.scss */
+  body .container .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+  }
+  /* line 79, ../sass/custom.scss */
+  body .container .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  /* line 90, ../sass/custom.scss */
+  body .container .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  /* line 95, ../sass/custom.scss */
+  body .container .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  /* line 101, ../sass/custom.scss */
+  body .footer {
+    display: flex;
+    align-items: center;
+  }
+}
